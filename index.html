@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Course Home Page</title>
+    <meta name="description" content="WDD 231 Web Frontend Development I course home page for Jeshurun Salami.">
+    <meta name="author" content="Jeshurun Salami">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+
+    <!-- JavaScript Files (defer) -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-wrapper">
+            <img src="images/logo.svg" alt="Site Logo">
+        </div>
+        <span class="student-name">Jeshurun Salami</span>
+        <button id="menu" aria-label="Open Navigation Menu">☰</button>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Home</h1>
+
+        <div class="hero-grid">
+            <!-- About Me Section -->
+            <section class="card about-me">
+                <h2>About Me</h2>
+                <p>
+
+                </p>
+            </section>
+
+            <!-- Student Photo Section -->
+            <section class="card student-photo">
+                <h2>Student Photo</h2>
+                <div class="photo-container">
+                    <img src="images/profile.jpeg" alt="Student Photo of [Your Name]" loading="lazy">
+                </div>
+            </section>
+        </div>
+
+        <!-- Web Certificate Courses Section -->
+        <section class="card certificate-courses">
+            <h2>Web Certificate Courses</h2>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button id="all" class="filter-btn">All</button>
+                <button id="cse" class="filter-btn">CSE</button>
+                <button id="wdd" class="filter-btn">WDD</button>
+            </div>
+
+            <!-- Dynamic Courses Container -->
+            <div id="courses-container" class="courses-grid">
+
+            </div>
+
+            <!-- Total Credits Display -->
+            <p id="total-credits">The total credits for course listed above is <span id="credit-count">0</span></p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin-icon.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com" target="_blank" aria-label="GitHub">
+                <img src="images/github-icon.svg" alt="GitHub">
+            </a>
+            <a href="#" target="_blank" aria-label="Twitter / X">
+                <img src="images/x-icon.svg" alt="X">
+            </a>
+        </div>
+
+        <div class="paragraph">
+            <p class="copyright">
+                © <span id="currentyear"></span> • Jeshurun Salami • Lomé, Togo
+            </p>
+
+            <p class="last-modified">
+                Last Modification: <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

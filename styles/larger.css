@@ -1,0 +1,92 @@
+@media screen and (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        justify-content: flex-start;
+        gap: 2rem;
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+
+    .logo-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    nav {
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .navigation li a {
+        color: var(--primary-color);
+        font-weight: bold;
+        border-bottom: none;
+        padding: 0.5rem 1rem;
+    }
+
+    .navigation li a:hover,
+    .navigation li a.active {
+        background-color: var(--secondary-color);
+        color: #ffffff;
+        border-radius: 4px;
+    }
+
+    main {
+        padding: 0;
+        width: 100%;
+    }
+
+    h1 {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .hero-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .card {
+        background-color: var(--completed-bg);
+    }
+
+    .filter-buttons {
+        gap: 0.8rem;
+        padding: 1rem 0;
+    }
+
+    .certificate-courses {
+        background: none;
+        border: none;
+        width: 100%;
+    }
+
+    .courses-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 0 0 1rem 0;
+    }
+
+    #total-credits {
+        padding: 0 0 1rem 0;
+    }
+
+    footer {
+        padding: 0;
+    }
+}

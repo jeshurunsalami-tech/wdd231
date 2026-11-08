@@ -1,0 +1,45 @@
+:root {
+    --primary-color: #1b263b;
+    --secondary-color: #415a77;
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-color: #212529;
+    --completed-bg: #d8f3dc;
+    --font-family: 'Roboto', sans-serif;
+    --heading-font: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    padding: 0;
+}
+
+.paragraph {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+.paragraph p {
+    color: var(--card-bg);
+}
