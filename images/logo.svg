@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Dégradé bleu profond pour J, E, H -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Dégradé or/bronze pour le S -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fond blanc pur -->
+  <rect width="500" height="500" fill="#FFFFFF" />
+
+  <!-- Groupe principal du monogramme JESH combinant les deux styles exacts demandés -->
+  <g>
+    <!-- J (style initial) -->
+    <path d="M 120 180 h 20 v 115 c 0 15 -10 22 -25 22 h -12 v -18 h 10 c 5 0 7 -3 7 -9 z" fill="url(#blueGrad)" />
+
+    <!-- E (style initial) -->
+    <path d="M 155 215 h 65 v 18 h -45 v 15 h 38 v 18 h -38 v 16 h 45 v 18 h -65 z" fill="url(#blueGrad)" />
+
+    <!-- H (style initial) -->
+    <path d="M 315 180 h 20 v 48 h 45 v -48 h 20 v 115 h -20 v -49 h -45 v 49 h -20 z" fill="url(#blueGrad)" />
+
+    <!-- S (exactement le style de l'image de référence avec la boucle dorée et le point/boule inférieur) -->
+    <g fill="url(#goldGrad)">
+      <path d="M 260 120 C 235 120 220 135 220 155 C 220 180 250 195 275 210 C 305 225 320 240 320 268 C 320 300 290 320 255 320 C 220 320 195 295 190 270 L 212 260 C 216 280 235 300 255 300 C 278 300 295 288 295 268 C 295 248 275 235 250 220 C 225 205 200 190 200 155 C 200 128 225 105 260 105 C 285 105 305 115 315 130 L 295 142 C 288 130 275 120 260 120 Z" />
+      <circle cx="260" cy="352" r="12" />
+    </g>
+  </g>
+</svg>
