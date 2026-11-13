@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Lome Business Center",
+        "address": "123 Boulevard du 13 Janvier, Lomé",
+        "description": "Business consulting and professional services.",
+        "email": "info@lomebusiness.example",
+        "phone": "+228 90 00 00 01",
+        "website": "https://example.com",
+        "image": "lome-business.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Togo Digital",
+        "address": "45 Avenue de la Libération, Lomé",
+        "description": "Digital solutions and technology services.",
+        "email": "contact@togodigital.example",
+        "phone": "+228 90 00 00 02",
+        "website": "https://example.com",
+        "image": "togo-digital.webp",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Green Energy",
+        "address": "12 Quartier Akéfé, Lomé",
+        "description": "Renewable energy and sustainable solutions.",
+        "email": "info@greenenergy.example",
+        "phone": "+228 90 00 00 03",
+        "website": "https://example.com",
+        "image": "green-energy.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Lome Fashion",
+        "address": "78 Grand Marché, Lomé",
+        "description": "Fashion, clothing and textile products.",
+        "email": "contact@lomefashion.example",
+        "phone": "+228 90 00 00 04",
+        "website": "https://example.com",
+        "image": "lome-fashion.webp",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Togo Construction",
+        "address": "12 Zone Industrielle, Lomé",
+        "description": "Construction and building services.",
+        "email": "info@togoconstruction.example",
+        "phone": "+228 90 00 00 05",
+        "website": "https://example.com",
+        "image": "togo-construction.webp",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Atlantic Food",
+        "address": "90 Boulevard du Mono, Lomé",
+        "description": "Food distribution and catering services.",
+        "email": "contact@atlanticfood.example",
+        "phone": "+228 90 00 00 06",
+        "website": "https://example.com",
+        "image": "atlantic-food.webp",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Lome Health",
+        "address": "15 Rue de la Paix, Lomé",
+        "description": "Health services and wellness solutions.",
+        "email": "info@lomehealth.example",
+        "phone": "+228 90 00 00 07",
+        "website": "https://example.com",
+        "image": "lome-health.webp",
+        "membershipLevel": 3
+    }
+]

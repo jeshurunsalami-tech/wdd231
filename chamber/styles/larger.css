@@ -1,0 +1,269 @@
+@media screen and (min-width: 768px) {
+
+    /* Header */
+
+    .header-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 110px;
+        padding: 1rem 5%;
+        gap: 2rem;
+        background-color: var(--primary-color);
+        color: var(--background-color);
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        flex-shrink: 0;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+        gap: 2rem;
+        margin-left: auto;
+        border: none;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75rem 1rem;
+        border: none;
+        white-space: nowrap;
+        color: var(--background-color);
+        transition: background-color 0.3s ease;
+    }
+
+    .navigation a:hover {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        border-radius: 5px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    /* Main */
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    main h1 {
+        text-align: left;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Directory buttons */
+
+    .view-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .view-buttons button {
+        padding: 0.75rem 1.8rem;
+        border: 2px solid var(--primary-color);
+        border-radius: 5px;
+        background-color: var(--background-color);
+        color: var(--primary-color);
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .view-buttons button.active,
+    .view-buttons button[aria-pressed="true"] {
+        background-color: var(--primary-color);
+        color: var(--background-color);
+    }
+
+    .view-buttons button:hover {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+    }
+
+    /* Members grid */
+
+    .members-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    /* Member cards */
+
+    .member-card {
+        display: grid;
+        grid-template-columns: 100px minmax(0, 1fr);
+        grid-template-rows: auto auto 1fr;
+        gap: 1rem;
+        padding: 1.5rem;
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        background-color: var(--card-background);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    }
+
+    .member-card h2 {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-family: var(--heading-font);
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .business-tagline {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-size: 0.95rem;
+        margin: 0;
+        padding-bottom: 0.8rem;
+        border-bottom: 1px solid #000;
+        margin-bottom: 0.5rem;
+    }
+
+    .member-card img {
+        grid-column: 1;
+        grid-row: 3;
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        align-self: center;
+    }
+
+    /* Member information */
+
+    .member-info {
+        grid-column: 2;
+        grid-row: 3;
+        align-self: center;
+        min-width: 0;
+        font-size: 0.9rem;
+    }
+
+    .member-info p {
+        margin: 0.5rem 0;
+        overflow-wrap: anywhere;
+    }
+
+    .member-info .member-address {
+        line-height: 1.4;
+    }
+
+    .member-info a {
+        color: var(--primary-color);
+        text-decoration: underline;
+        overflow-wrap: anywhere;
+    }
+
+    /* Members list */
+
+    .members-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+    }
+
+    .members-list .member-card {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1.2fr;
+        grid-template-rows: auto auto auto;
+        align-items: center;
+        gap: 0.5rem 1.5rem;
+        width: 100%;
+        padding: 1.2rem;
+        border: 1px solid var(--border-color);
+        border-radius: 0;
+        box-shadow: none;
+        text-align: left;
+    }
+
+    .members-list .member-card h2 {
+        grid-column: 1;
+        grid-row: 1;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+
+    .members-list .member-card .business-tagline {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+    .members-list .member-card img {
+        display: none;
+    }
+
+    .members-list .member-info {
+        display: contents;
+    }
+
+    .members-list .member-info p {
+        margin: 0;
+        font-size: 0.9rem;
+        overflow-wrap: anywhere;
+    }
+
+    .members-list .member-info .member-address {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .members-list .member-info .member-email {
+        grid-column: 2;
+        grid-row: 1 / 4;
+    }
+
+    .members-list .member-info .member-phone {
+        grid-column: 3;
+        grid-row: 1 / 4;
+    }
+
+    .members-list .member-info .member-website {
+        grid-column: 4;
+        grid-row: 1 / 4;
+    }
+
+    /* Footer */
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 2rem 5%;
+        background-color: var(--primary-color);
+        color: var(--background-color);
+    }
+
+    .footer-content address {
+        font-style: normal;
+    }
+
+}

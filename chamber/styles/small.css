@@ -1,0 +1,247 @@
+@media screen and (max-width: 767px) {
+
+    /* Header */
+
+    .header-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        min-height: 80px;
+        padding: 1rem;
+        background-color: var(--primary-color);
+        color: var(--background-color);
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        min-width: 0;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+
+    .menu-button {
+        display: block;
+        padding: 0.4rem 0.7rem;
+        border: 1px solid var(--background-color);
+        border-radius: 5px;
+        background-color: transparent;
+        color: var(--background-color);
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        margin-top: 1rem;
+        border-top: 1px solid var(--secondary-color);
+    }
+
+    .navigation.show {
+        display: flex;
+    }
+
+    .navigation a {
+        display: block;
+        width: 100%;
+        padding: 0.9rem 0;
+        color: var(--background-color);
+        text-align: center;
+        border-bottom: 1px solid var(--secondary-color);
+    }
+
+    .navigation a:hover {
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+    }
+
+    /* Main */
+
+    main {
+        width: 100%;
+        margin: 0 auto;
+        padding: 1.2rem;
+    }
+
+    main h1 {
+        text-align: left;
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Directory buttons */
+
+    .view-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .view-buttons button {
+        padding: 0.65rem 1.5rem;
+        border: 2px solid var(--primary-color);
+        border-radius: 5px;
+        background-color: var(--background-color);
+        color: var(--primary-color);
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .view-buttons button.active,
+    .view-buttons button[aria-pressed="true"] {
+        background-color: var(--primary-color);
+        color: var(--background-color);
+    }
+
+    /* Members grid */
+
+    .members-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        width: 100%;
+    }
+
+    /* Member cards */
+
+    .member-card {
+        display: grid;
+        grid-template-columns: 85px minmax(0, 1fr);
+        grid-template-rows: auto auto auto;
+        gap: 0.8rem;
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        background-color: var(--card-background);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    }
+
+    .member-card h2 {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-family: var(--heading-font);
+        font-size: 1.15rem;
+        margin: 0;
+    }
+
+    .business-tagline {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-size: 0.9rem;
+        margin: 0;
+        padding-bottom: 0.8rem;
+        border-bottom: 1px solid #000;
+        margin-bottom: 0.5rem;
+    }
+
+    .member-card img {
+        grid-column: 1;
+        grid-row: 3;
+        width: 85px;
+        height: 85px;
+        object-fit: contain;
+        align-self: center;
+    }
+
+    /* Member information */
+
+    .member-info {
+        grid-column: 2;
+        grid-row: 3;
+        align-self: center;
+        min-width: 0;
+        font-size: 0.8rem;
+    }
+
+    .member-info p {
+        margin: 0.4rem 0;
+        overflow-wrap: anywhere;
+    }
+
+    .member-info .member-address {
+        line-height: 1.4;
+    }
+
+    .member-info a {
+        color: var(--primary-color);
+        text-decoration: underline;
+        overflow-wrap: anywhere;
+    }
+
+    /* Members list */
+
+    .members-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    .members-list .member-card {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid var(--border-color);
+        border-radius: 0;
+        box-shadow: none;
+        text-align: left;
+    }
+
+    .members-list .member-card h2 {
+        text-align: left;
+        font-size: 1.1rem;
+    }
+
+    .members-list .member-card .business-tagline {
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+    .members-list .member-card img {
+        display: none;
+    }
+
+    .members-list .member-info {
+        display: block;
+        font-size: 0.85rem;
+    }
+
+    .members-list .member-info p {
+        margin: 0.5rem 0;
+        font-size: 0.85rem;
+        overflow-wrap: anywhere;
+    }
+
+    /* Footer */
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        background-color: var(--primary-color);
+        color: var(--background-color);
+    }
+
+    .footer-content address {
+        font-style: normal;
+    }
+
+}
