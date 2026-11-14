@@ -266,4 +266,23 @@
         font-style: normal;
     }
 
+    .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .social-media a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-media img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+    }
+
 }

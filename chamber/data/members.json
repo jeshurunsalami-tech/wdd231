@@ -2,10 +2,10 @@
     {
         "name": "Lome Business Center",
         "address": "123 Boulevard du 13 Janvier, Lomé",
-        "description": "Business consulting and professional services.",
+        "description": "Business and professional services.",
         "email": "info@lomebusiness.example",
         "phone": "+228 90 00 00 01",
-        "website": "https://example.com",
+        "website": "https://www.otr.tg/services-en-ligne/",
         "image": "lome-business.webp",
         "membershipLevel": 3
     },
@@ -15,7 +15,7 @@
         "description": "Digital solutions and technology services.",
         "email": "contact@togodigital.example",
         "phone": "+228 90 00 00 02",
-        "website": "https://example.com",
+        "website": "https://numerique.gouv.tg/",
         "image": "togo-digital.webp",
         "membershipLevel": 2
     },
@@ -25,7 +25,7 @@
         "description": "Renewable energy and sustainable solutions.",
         "email": "info@greenenergy.example",
         "phone": "+228 90 00 00 03",
-        "website": "https://example.com",
+        "website": "https://at2er.tg/",
         "image": "green-energy.webp",
         "membershipLevel": 3
     },

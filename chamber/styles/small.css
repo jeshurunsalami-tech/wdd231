@@ -244,4 +244,23 @@
         font-style: normal;
     }
 
+    .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .social-media a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-media img {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+    }
+
 }
