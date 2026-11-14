@@ -8,8 +8,8 @@
     --border-color: #dddddd;
 
     /* Fonts */
-    --heading-font: Arial, Helvetica, sans-serif;
-    --body-font: Arial, Helvetica, sans-serif;
+    --heading-font: "Ubuntu", sans-serif;
+    --body-font: "Barlow", sans-serif;
 }
 
 /* Reset */
