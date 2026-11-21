@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Discover local businesses and organizations that are members of our Chamber of Commerce.">
+    <meta name="author" content="Jeshurun Salami">
+
+    <meta property="og:title" content="Chamber of Commerce | Home Page">
+    <meta property="og:description" content="Discover local businesses and organizations in our community.">
+    <meta property="og:image" content="https://jeshurunsalami-tech.github.io/wdd231/chamber/images/social-preview.jpg">
+    <meta property="og:url" content="https://jeshurunsalami-tech.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <title>Home Page | Chamber of Commerce</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto:ital@0;1&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/weather.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Chamber of Commerce Logo">
+                <span>Chamber of Commerce</span>
+            </a>
+
+            <button class="menu-button" id="menu-button">
+                ☰
+            </button>
+
+            <nav id="primary-navigation" class="navigation">
+                <a href="index.html">Home</a>
+                <a href="directory.html" class="active" aria-current="page">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="discover.html">Discover</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="home">
+            <section class="hero-image">
+                <img src="images/cc_lome.webp" alt="Lome Chamber of Commerce">
+                <div class="join">
+                    <p>Join a network of local businesses, leaders, and entrepreneurs working together for a stronger
+                        business community.</p>
+                    <a href="join.html">Join our community</a>
+                </div>
+                <h1>Welcome to the Lomé Chamber of Commerce</h1>
+            </section>
+
+            <section class="events">
+                <h2>Current Events</h2>
+                <p>📅 <strong>Date:</strong> November 16–20, 2026</p>
+                <div class="events-article">
+                    <article class="event-card">
+                        <h3>Business Networking Meeting</h3>
+                        <p>Meet local business owners, entrepreneurs, and professionals to build valuable connections.
+                        </p>
+                    </article>
+
+                    <article class="event-card">
+                        <h3>Small Business Development Workshop</h3>
+                        <p>Learn practical strategies to grow your business and improve your management skills.</p>
+                    </article>
+
+                    <article class="event-card">
+                        <h3>Entrepreneurship and Innovation Forum</h3>
+                        <p>Discover new business opportunities and exchange ideas with local entrepreneurs.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="weather">
+                <h2>Weather</h2>
+
+                <div class="current-weather">
+                    <h3>Current Weather</h3>
+                    <p>Temperature: <span id="current-temperature"></span></p>
+                    <p>Description: <span id="weather-description"></span></p>
+                </div>
+
+                <div class="weather-forecast">
+                    <h3>3-Day Forecast</h3>
+                    <div id="forecast-container">
+                        <p>/p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="spotlights">
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-information">
+                <h2>Chamber of Commerce</h2>
+
+                <address>
+                    <p>Hédzranawoé</p>
+                    <p>Lomé, Togo</p>
+                    <p>Email: jeshurunsalami@gmail.com</p>
+                    <p>Phone: +228 98 16 15 30</p>
+                </address>
+            </div>
+
+            <div class="social-media">
+                <a href="https://www.youtube.com/channel/UChOFQljyynKxDCLn1qlVDPA" aria-label="Youtube">
+                    <img src="images/youtube-icon.svg" alt="Youtube">
+                </a>
+
+                <a href="https://www.facebook.com/09.jeshurun.s" aria-label="Facebook">
+                    <img src="images/facebook-icon.svg" alt="Facebook">
+                </a>
+
+                <a href="https://www.linkedin.com/in/jeshurun-salami-6239023a9/" aria-label="LinkedIn">
+                    <img src="images/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+            </div>
+
+            <div class="development-information">
+                <p>WDD 231 Class Project</p>
+
+                <p>Jeshurun Salami</p>
+
+                <p>
+                    &copy; <span id="current-year"></span>
+                    Chamber of Commerce
+                </p>
+
+                <p>
+                    Last Modification:
+                    <span id="last-modification"></span>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
