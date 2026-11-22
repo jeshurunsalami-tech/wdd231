@@ -313,18 +313,20 @@
 
     .join {
         position: absolute;
-        top: 30%;
+        top: 10%;
+        left: -5%;
         width: 500px;
-        left: 20%;
         text-align: center;
         padding: 2rem;
         font-size: 1.5rem;
-        background-color: var(--background-color);
+        color: var(--background-color);
+        background: transparent;
     }
 
     .join p {
         padding: 0;
         margin: 0.5rem;
+        text-shadow: 1px 1px 3px #000;
     }
 
     .join a {
@@ -333,7 +335,7 @@
         margin: 1rem;
         padding: 1rem;
         border-radius: 5px;
-        background-color: red;
+        background-color: var(--primary-color);
     }
 
     .home h1 {
