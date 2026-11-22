@@ -294,6 +294,11 @@
         margin: 2rem 0;
     }
 
+    .home h1,
+    h2 {
+        color: var(--primary-color);
+    }
+
     .hero-image {
         position: relative;
         width: 100%;
@@ -337,6 +342,8 @@
         margin: 0;
     }
 
+    /*Events section*/
+
     .events h2 {
         text-align: center;
         padding: 2rem;
@@ -358,7 +365,7 @@
         gap: 2rem;
         justify-items: center;
         align-items: center;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .event-card {
@@ -378,5 +385,98 @@
         margin: 0;
     }
 
+    .weather {
+        padding: 25px;
+        margin: 20px 0;
+    }
+
+    .weather h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 28px;
+    }
+
+    .current-weather,
+    .weather-forecast {
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    .weather h3 {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .current-weather p,
+    .weather-forecast p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .weather {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .weather h2 {
+        grid-column: 1 / -1;
+    }
+
+    #forecast-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /*Spotlight section*/
+
+    .spotlights {
+        padding: 25px;
+        margin: 20px 0;
+    }
+
+    .spotlights h2 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    #spotlights-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .spotlight-card {
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        text-align: center;
+        background-color: var(--third-color);
+    }
+
+    .spotlight-card h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .spotlight-card img {
+        width: 130px;
+        height: 100px;
+        object-fit: contain;
+        margin-bottom: 15px;
+    }
+
+    .spotlight-card p {
+        margin: 10px 0;
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    .spotlight-card a {
+        text-decoration: underline;
+    }
 
 }
