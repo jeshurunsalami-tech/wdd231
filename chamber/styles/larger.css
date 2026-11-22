@@ -314,6 +314,7 @@
     .join {
         position: absolute;
         top: 10%;
+        left: 10%;
         width: 500px;
         text-align: center;
         padding: 2rem;
